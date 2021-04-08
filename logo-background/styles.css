@@ -1,0 +1,25 @@
+/* 
+https://codepen.io/amite/pen/rPQWaj
+*/
+
+* { box-sizing: border-box }
+
+body{
+  margin:0;
+  padding:0;
+  font-family:sans-serif;
+  background-image: url("logoDuqIncline1.png");
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom right;
+/*   font-size:160%; */
+}
+div{
+    padding: 4% 10%;
+    background-color: rgba(255,255,255,.75);
+}
+header, footer{
+  background-color:#002848;
+  min-height: 40px;
+}
