@@ -46,3 +46,24 @@ header img {
   width: 100%;
   height: auto; 
 }
+
+footer {
+  background-color: var(--main-color-bg);
+  color: white;
+  display: flex;
+  flex-direction: row;
+  padding: 4px;
+}
+
+footer div {
+  margin: 4px;
+}
+
+footer table {
+  color: white;
+}
+
+footer img {
+  height: 200px;
+  width: auto;
+}
