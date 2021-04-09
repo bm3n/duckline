@@ -1,28 +1,48 @@
+/*
+https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
+*/
+:root {
+  --main-color-active: #852328;
+  --main-color-hover: #F7B24B;
+  --main-color-bg: #43454A;
+}
+
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  .topnav {
+}
+
+/*
+https://www.w3schools.com/howto/howto_js_topnav.asp
+*/
+nav {
+    background-color: var(--main-color-bg);
     overflow: hidden;
-    backdrop-filter: blur(5px);
-  }
+}
   
-  .topnav a {
+nav a {
     float: left;
-    color: black;
+    color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-  }
+}
   
-  .topnav a:hover {
-    background-color: #ddd;
+nav a:hover {
+    background-color: var(--main-color-hover);
     color: black;
-  }
+}
   
-  .topnav a.active {
-    background-color: #4CAF50;
+nav a.active {
+    background-color: var(--main-color-active);
     color: white;
-  }
+}
+
+/*
+https://www.w3schools.com/howto/howto_css_image_responsive.asp
+*/
+header img {
+  width: 100%;
+  height: auto; 
+}
