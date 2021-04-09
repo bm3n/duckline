@@ -31,7 +31,7 @@ nav a {
   
 nav a:hover {
     background-color: var(--main-color-hover);
-    color: black;
+    color: var(--main-color-bg);
 }
   
 nav a.active {
@@ -47,23 +47,29 @@ header img {
   height: auto; 
 }
 
+/*
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+*/
 footer {
   background-color: var(--main-color-bg);
   color: white;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
   padding: 4px;
 }
 
 footer div {
-  margin: 4px;
+  flex-grow: 1;
+  margin: 5px;
 }
 
 footer table {
   color: white;
 }
 
-footer img {
+footer .logo {
   height: 200px;
   width: auto;
 }
