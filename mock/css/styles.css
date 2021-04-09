@@ -2,9 +2,10 @@
 https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
 */
 :root {
-  --main-color-active: #852328;
-  --main-color-hover: #F7B24B;
-  --main-color-bg: #43454A;
+  --menu-color-active: #852328;
+  --menu-color-hover: #F7B24B;
+  --background-color: #43454A;
+  --attribution-color:#A1A2A5;
 }
 
 body {
@@ -16,27 +17,27 @@ body {
 https://www.w3schools.com/howto/howto_js_topnav.asp
 */
 nav {
-    background-color: var(--main-color-bg);
+    background-color: var(--background-color);
     overflow: hidden;
 }
   
 nav a {
-    float: left;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
   
 nav a:hover {
-    background-color: var(--main-color-hover);
-    color: var(--main-color-bg);
+  background-color: var(--menu-color-hover);
+  color: var(--background-color);
 }
   
 nav a.active {
-    background-color: var(--main-color-active);
-    color: white;
+  background-color: var(--menu-color-active);
+  color: white;
 }
 
 /*
@@ -47,11 +48,16 @@ header img {
   height: auto; 
 }
 
+header .image-attribution {
+  color: var(--attribution-color);
+  font-weight: 400;
+}
+
 /*
 https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 */
 footer {
-  background-color: var(--main-color-bg);
+  background-color: var(--background-color);
   color: white;
   display: flex;
   flex-direction: row;
