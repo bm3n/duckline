@@ -60,6 +60,10 @@ footer {
   padding: 4px;
 }
 
+footer a {
+  color: white;
+}
+
 footer div {
   flex-grow: 1;
   margin: 5px;
@@ -72,4 +76,15 @@ footer table {
 footer .logo {
   height: 200px;
   width: auto;
+}
+
+footer .badge {
+  height: 56px;
+  width: auto;
+}
+
+footer .social-media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
