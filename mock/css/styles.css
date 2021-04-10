@@ -53,6 +53,10 @@ header .image-attribution {
   font-weight: 400;
 }
 
+main {
+  padding: 16px;
+}
+
 /*
 https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 */
